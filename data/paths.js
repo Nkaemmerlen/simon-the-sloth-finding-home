@@ -21,9 +21,31 @@ const allDecisions = [
   "Ask her for directions to the blue river crossing where your house is near, and be on your merry way",
   "Head east from your current location",
   "Head west from your current location",
-  
-
+  "Hope for the best and head west",
+  "Decide to start looking for food around you",
+  "Keep going and hope that ther is leftover at home",
+  "Observe your surroundings to see if anything is fishy",
+  "who cares im starving!",
 ]
 
 
 
+const allSituations = [
+  "You wake up after a hard fall and feel disorientated, What will you do now?",
+  "What direction should you start walking in to find food and water?",
+  "Nothing looks familiar to you, but you know you didnt come from the north or south. Will you go east or west?",
+  "After walking for a bit you start to smell the faint scent of fresh cut leaves but cant pinpoint the exact location. It is either to your north or to your south",
+  "As you continue walking the scent grows stronger, your belly starts the rumble in anticipation. But as the scent get stronger you start to hear the sound of rushing water! 'Dinner and a drink!' you think to yourself. Will you take your time and approach cautiously, or will you run towards that long awaited meal?",
+
+
+
+
+
+
+
+]
+
+const allEndings = [
+  "You have slowly approached the smell of a delicious meal. Only to find out what you were smelling was fresh cut grass on the side of a freeway, and the noise you were hearing was rushing cars. You colapse on the ground in defeat. Before you can react you are being picked up and shoved into a box! What could this be? What is happening? As you are in deep thought and panic you"
+
+]
