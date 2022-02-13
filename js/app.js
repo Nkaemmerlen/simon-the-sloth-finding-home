@@ -1,8 +1,6 @@
 /*--------------------------Constants-------------------------------*/
 import { allDecisions, allSituations, allEndings } from "../data/paths.js"
-// console.log(allDecisions[7])
-// console.log(allSituations[4])
-// console.log(allEndings[2])
+
 
 /*---------------------------Variables------------------------------*/
 
@@ -57,9 +55,9 @@ function storyLine (click){
   if(clicked === allDecisions[2]){
     prompt.textContent = allSituations[12]
     dec1.textContent = ''
-    dec2.textContent = allDecisions[23]
+    dec2.textContent = allDecisions[22]
     dec3.textContent = ''
-    dec4.textContent = allDecisions[24]
+    dec4.textContent = allDecisions[23]
   }
   if (clicked === allDecisions[4]){
     prompt.textContent = allSituations[3]
@@ -156,4 +154,57 @@ function storyLine (click){
     //confetti
     //display you won screen
   }
+  if (clicked === allDecisions[19]){
+    prompt.textContent = allEndings[3]
+    //show replay
+    //confetti
+    //display you won screen
+    //display house in forest
+  }
+  if (clicked === allDecisions[20]){
+    prompt.textContent = allSituations[3]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[7]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[8] 
+  }
+  if (clicked === allDecisions[21]){
+    prompt.textContent = allDecisions[5]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[22]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[23]
+  }
+  if (clicked === allDecisions[22]){
+    prompt.textContent = allSituations[6]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[23]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[24]
+  }
+  if (clicked === allDecisions[23]){
+    prompt.textContent = allSituations[13][14][8]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[14]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[15]
+  }
+  if (clicked === allDecisions[24]){
+    prompt.textContent = allEndings[4]
+    // replay
+    //death screen
+    //jaguar noise
+    dec1.textContent = ''
+    dec2.textContent = ''
+    dec3.textContent = ''
+    dec4.textContent = ''
+  }
+  if (clicked === allDecisions[25]){
+    prompt.textContent = 
+    dec1.textContent =
+    dec2.textContent =
+    dec3.textContent =
+    dec4.textContent =
+  }
+  
 }
