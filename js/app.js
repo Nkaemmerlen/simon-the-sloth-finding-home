@@ -75,4 +75,41 @@ function storyLine (click){
     dec3.textContent = allDecisions[14]
     dec4.textContent = ''
   }
+  if (clicked === allDecisions[6]){
+    prompt.textContent = allSituations[3]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[7]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[8] 
+    }
+  if (clicked === allDecisions[7]){
+    prompt.textContent = allSituations[7]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[11]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[12] 
+  }
+  if (clicked === allDecisions[8]){
+    prompt.textContent = allSituations[4]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[9]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[10] 
+  }
+  if (clicked === allDecisions[9]){
+    prompt.textContent = allEndings[0]
+    // show replay button and zoo screen/sound
+  }
+  if (clicked === allDecisions[10]){
+    prompt.textContent = allEndings[1]
+    //show replay button and death screen
+  }
+  if (clicked === allDecisions[11]){
+    prompt.textContent = allSituations[4]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[9]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[10] 
+  }
+  
 }
