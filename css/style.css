@@ -11,3 +11,31 @@ html {
 :root {
   font-size: 62.5%;
 }
+body {
+  display:flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+}
+.card {
+  color: white;
+}
+.container {
+  height: 100vh;
+}
+#decision-row {
+  height: 15%;
+}
+#prompt-row {
+  height: 50%;
+}
+#title-row {
+  height: 5%;
+  text-align: center;
+}
+.decision {
+  height: 25%;
+}
+#situation {
+  height:100%
+}
