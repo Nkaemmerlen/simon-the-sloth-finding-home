@@ -48,13 +48,31 @@ function storyLine (click){
     dec4.textContent = allDecisions[6]
   }
   if(clicked === allDecisions[1]){
-    console.log('wooh')
+    prompt.textContent = allSituations[2]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[22]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[20]
   }
   if(clicked === allDecisions[2]){
-    console.log('yippee')
+    prompt.textContent = allSituations[12]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[23]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[24]
   }
   if (clicked === allDecisions[4]){
-    console.log("you made it")
+    prompt.textContent = allSituations[3]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[7]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[8]
   }
-
+  if (clicked === allDecisions[5]){
+    prompt.textContent = allSituations[8]
+    dec1.textContent = allDecisions[13]
+    dec2.textContent = allDecisions[15]
+    dec3.textContent = allDecisions[14]
+    dec4.textContent = ''
+  }
 }
