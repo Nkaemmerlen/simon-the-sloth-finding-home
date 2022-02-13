@@ -111,5 +111,31 @@ function storyLine (click){
     dec3.textContent = ''
     dec4.textContent = allDecisions[10] 
   }
+  if (clicked === allDecisions[12]){
+    prompt.textContent = allSituations[8]
+    dec1.textContent = allDecisions[13]
+    dec2.textContent = allDecisions[14]
+    dec3.textContent = allDecisions[15]
+  }
+  if (clicked === allDecisions[13]){
+    prompt.textContent = allEndings[5]
+    // show replay
+    // death screen
+    // grunt death sound
+  }
+  if (clicked === allDecisions[14]){
+    prompt.textContent = allSituations[10]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[19]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[18]
+  }
+  if (clicked === allDecisions[15]){
+    prompt.textContent = allSituations[9]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[16]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[17]
+  }
   
 }
