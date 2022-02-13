@@ -25,7 +25,7 @@ const allDecisions = [
   "Decide to start looking for food around you",
   "Keep going and hope that ther is leftover at home",
   "Observe your surroundings to see if anything is fishy",
-  "who cares im starving!",
+  "who cares im starving!"
 ]
 
 
@@ -45,15 +45,7 @@ const allSituations = [
   "After assessing your surroundings you have come to realize that you house is due west from here!",
   "You head west and reach freedom rock, you know that your home is only a few more miles west. But your hunger grows and you begin to feel weak.",
   "As you are looking around you spot a jaguar hiding in near by bush. You slowly back away and continue heading west towrds home, but your hunger continues to grow.",
-  "Struggling to continue forward you collapse forward. Unknowlingly into the lap of another sloth!",
-
-
-
-
-
-
-
-
+  "Struggling to continue forward you collapse forward. Unknowlingly into the lap of another sloth!"
 ]
 
 const allEndings = [
@@ -63,6 +55,10 @@ const allEndings = [
   "After a long adventure you have finally arrived home! Belly full of food and a warm home. After your long adventure you fall asleep to eat another day!",
   "As soon as you reach the pile of leaves a jaguar pops out from behind a bush! It was a trap!!! The jaguar feasts on your gullible body. you die",
   "As you are running away your vision begins to turn black and your body no longer has enough energy to move. You die of starvation"
-
-
 ]
+
+export {
+  allDecisions,
+  allEndings,
+  allSituations
+}
