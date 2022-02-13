@@ -36,6 +36,17 @@ const allSituations = [
   "Nothing looks familiar to you, but you know you didnt come from the north or south. Will you go east or west?",
   "After walking for a bit you start to smell the faint scent of fresh cut leaves but cant pinpoint the exact location. It is either to your north or to your south",
   "As you continue walking the scent grows stronger, your belly starts the rumble in anticipation. But as the scent get stronger you start to hear the sound of rushing water! 'Dinner and a drink!' you think to yourself. Will you take your time and approach cautiously, or will you run towards that long awaited meal?",
+  "As you head west still nothing looks familiar to you, but you keep on going. A few miles later and you have finally recognized where you are! You are at freedom rock! You know that your house is only a few miles away at this point, but your appetite has grown significantly and you are growing weaker.",
+  "You spot a succulent pile of fresh leaves! Somthing doesnt feel right though. 'Why would there be a neat pile of food laying on the ground?' you think to yourself.",
+  "The scent of food soon fades. You can either turn back, or continue south to what you think is the sound of another sloth.",
+  "Much to your surprise you have come across another sloth! You soon realize this is no ordinary sloth, this is a beutiful female sloth!",
+  "Swing and a hit! Shes is all in! You introduce yourself and she introduces herself as syndey.",
+  "She hands you a bowl of fresh leaves and buds to munch on",
+  "After assessing your surroundings you have come to realize that you house is due west from here!",
+  "You head west and reach freedom rock, you know that your home is only a few more miles west. But your hunger grows and you begin to feel weak.",
+  "As you are looking around you spot a jaguar hiding in near by bush. You slowly back away and continue heading west towrds home, but your hunger continues to grow.",
+  "Struggling to continue forward you collapse forward. Unknowlingly into the lap of another sloth!",
+
 
 
 
@@ -46,6 +57,12 @@ const allSituations = [
 ]
 
 const allEndings = [
-  "You have slowly approached the smell of a delicious meal. Only to find out what you were smelling was fresh cut grass on the side of a freeway, and the noise you were hearing was rushing cars. You colapse on the ground in defeat. Before you can react you are being picked up and shoved into a box! What could this be? What is happening? As you are in deep thought and panic you"
+  "You have slowly approached the smell of a delicious meal. Only to find out what you were smelling was fresh cut grass on the side of a freeway, and the noise you were hearing was rushing cars. You colapse on the ground in defeat. Before you can react you are being picked up and shoved into a box! What could this be? What is happening? As you are in deep thought and panic you sudenly see a bright light. your are thrown out of the box and into a small pen of other sloths. You have been captured and taken to the zoo!",
+  "In your excitement you pay no attention to your surroundings. Before you can react you have become disorientated by bright lights and loud noises. You have found yourself in the middle of a busy freeway. You are ran over and died instantly!",
+  "Congratulations! You have met your soulmate and begin to create a new home for you both to live happily ever after!",
+  "After a long adventure you have finally arrived home! Belly full of food and a warm home. After your long adventure you fall asleep to eat another day!",
+  "As soon as you reach the pile of leaves a jaguar pops out from behind a bush! It was a trap!!! The jaguar feasts on your gullible body. you die",
+  "As you are running away your vision begins to turn black and your body no longer has enough energy to move. You die of starvation"
+
 
 ]
