@@ -137,5 +137,23 @@ function storyLine (click){
     dec3.textContent = ''
     dec4.textContent = allDecisions[17]
   }
-  
+  if (clicked === allDecisions[16]){
+    prompt.textContent = allEndings[2]
+    //show replay
+    //confetti
+    //display you won screen
+  }
+  if (clicked === allDecisions[17]){
+    prompt.textContent = allSituations[10]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[19]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[18]
+  }
+  if (clicked === allDecisions[18]){
+    prompt.textContent = allEndings[2]
+    //show replay
+    //confetti
+    //display you won screen
+  }
 }
