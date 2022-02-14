@@ -20,12 +20,14 @@ body {
 }
 .card {
   color: white;
+  margin: 25px;
+  border-radius: 10px;
 }
 .container {
   height: 100vh;
 }
 #decision-row {
-  height: 15%;
+  height: auto;
 }
 #prompt-row {
   height: 50%;
@@ -35,12 +37,15 @@ body {
   text-align: center;
 }
 .decision {
-  height: 25%;
+  height: fit-content;
   font-size: 15px;
+  margin: 0;
+  padding: 2px;
 }
 #situation {
-  height:100%;
+  height: auto;
   font-size: 20px;
+  padding: 5px;
   
 }
 .decision:hover{
