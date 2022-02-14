@@ -152,8 +152,8 @@ function storyLine (click){
     dec4.textContent = ''
     // death screen
     // grunt death sound
-    stomach.volume = .2
-    stomach.play()
+    hunger.volume = .2
+    hunger.play()
     //add grunt
   }
   if (clicked === allDecisions[14]){

@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   margin: 0;
   height: 100vh;
+  background-image: url('../assets/forest.png');
 }
 .card {
   color: white;
@@ -30,13 +31,18 @@ body {
   height: 50%;
 }
 #title-row {
-  height: 5%;
+  height: 20%;
   text-align: center;
 }
 .decision {
   height: 25%;
+  font-size: 15px;
 }
 #situation {
   height:100%;
+  font-size: 20px;
   
+}
+.decision:hover{
+  background-color: gray;
 }
