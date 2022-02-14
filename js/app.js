@@ -39,6 +39,7 @@ function init (){
   dec4.textContent = ''
   prompt.textContent = allSituations[0]
   rstBtn.setAttribute("hidden", 1)
+  forest.pause()
 }
 
 function storyLine (click){
@@ -125,6 +126,8 @@ function storyLine (click){
     dec2.textContent = ''
     dec3.textContent = ''
     dec4.textContent = ''
+    carCrash.volume = .1
+    carCrash.play()
     //show replay button and death screen
   }
   if (clicked === allDecisions[11]){
@@ -149,6 +152,9 @@ function storyLine (click){
     dec4.textContent = ''
     // death screen
     // grunt death sound
+    stomach.volume = .2
+    stomach.play()
+    //add grunt
   }
   if (clicked === allDecisions[14]){
     prompt.textContent = allSituations[10]
@@ -235,6 +241,8 @@ function storyLine (click){
     rstBtn.removeAttribute("hidden")
     //death screen
     //jaguar noise
+    jaguar.volume = .1
+    jaguar.play()
     dec1.textContent = ''
     dec2.textContent = ''
     dec3.textContent = ''
