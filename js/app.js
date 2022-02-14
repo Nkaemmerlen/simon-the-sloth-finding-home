@@ -23,6 +23,7 @@ dec2.addEventListener('click', storyLine)
 dec3.addEventListener('click', storyLine)
 dec4.addEventListener('click', storyLine)
 strBtn.addEventListener('click', storyLine)
+rstBtn.addEventListener('click', init)
 
 
 /*--------------------------- Functions ----------------------------*/
@@ -34,6 +35,7 @@ function init (){
   dec3.textContent = allDecisions[2]
   dec4.textContent = ''
   prompt.textContent = allSituations[0]
+  rstBtn.setAttribute("hidden", 1)
 }
 
 function storyLine (click){
@@ -105,11 +107,19 @@ function storyLine (click){
   if (clicked === allDecisions[9]){
     prompt.textContent = allEndings[0]
     rstBtn.removeAttribute("hidden")
+    dec1.textContent = ''
+    dec2.textContent = ''
+    dec3.textContent = ''
+    dec4.textContent = ''
     // show replay button and zoo screen/sound
   }
   if (clicked === allDecisions[10]){
     prompt.textContent = allEndings[1]
     rstBtn.removeAttribute("hidden")
+    dec1.textContent = ''
+    dec2.textContent = ''
+    dec3.textContent = ''
+    dec4.textContent = ''
     //show replay button and death screen
   }
   if (clicked === allDecisions[11]){
@@ -128,6 +138,10 @@ function storyLine (click){
   if (clicked === allDecisions[13]){
     prompt.textContent = allEndings[5]
     rstBtn.removeAttribute("hidden")
+    dec1.textContent = ''
+    dec2.textContent = ''
+    dec3.textContent = ''
+    dec4.textContent = ''
     // death screen
     // grunt death sound
   }
@@ -148,6 +162,10 @@ function storyLine (click){
   if (clicked === allDecisions[16]){
     prompt.textContent = allEndings[2]
     rstBtn.removeAttribute("hidden")
+    dec1.textContent = ''
+    dec2.textContent = ''
+    dec3.textContent = ''
+    dec4.textContent = ''
     //confetti
     //display you won screen
   }
@@ -161,12 +179,20 @@ function storyLine (click){
   if (clicked === allDecisions[18]){
     prompt.textContent = allEndings[2]
     rstBtn.removeAttribute("hidden")
+    dec1.textContent = ''
+    dec2.textContent = ''
+    dec3.textContent = ''
+    dec4.textContent = ''
     //confetti
     //display you won screen
   }
   if (clicked === allDecisions[19]){
     prompt.textContent = allEndings[3]
     rstBtn.removeAttribute("hidden")
+    dec1.textContent = ''
+    dec2.textContent = ''
+    dec3.textContent = ''
+    dec4.textContent = ''
     //confetti
     //display you won screen
     //display house in forest
@@ -219,7 +245,3 @@ function storyLine (click){
   
 }
 
-function startGame (){
-  strBtn = true
-  console.log(startButton)
-}
