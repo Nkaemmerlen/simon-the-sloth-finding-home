@@ -7,8 +7,8 @@ import { allDecisions, allSituations, allEndings } from "../data/paths.js"
 
 
 /*----------------- Cached Element References-----------------------*/
-const strBtn = document.getElementById("strbtn")
-const rstBtn = document.getElementById("rstbtn")
+const strBtn = document.getElementById("strBtn")
+const rstBtn = document.getElementById("rstBtn")
 const prompt = document.getElementById("situation")
 const dec1 = document.getElementById("firstD")
 const dec2 = document.getElementById("secondD")
@@ -22,6 +22,7 @@ dec1.addEventListener('click', storyLine)
 dec2.addEventListener('click', storyLine)
 dec3.addEventListener('click', storyLine)
 dec4.addEventListener('click', storyLine)
+strBtn.addEventListener('click', storyLine)
 
 
 /*--------------------------- Functions ----------------------------*/
@@ -58,6 +59,13 @@ function storyLine (click){
     dec2.textContent = allDecisions[22]
     dec3.textContent = ''
     dec4.textContent = allDecisions[23]
+  }
+  if (clicked === allDecisions[3]){
+    prompt.textContent = allSituations[3]
+    dec1.textContent = ''
+    dec2.textContent = allDecisions[7]
+    dec3.textContent = ''
+    dec4.textContent = allDecisions[8]
   }
   if (clicked === allDecisions[4]){
     prompt.textContent = allSituations[3]
@@ -207,4 +215,9 @@ function storyLine (click){
   //   dec4.textContent =
   // }
   
+}
+
+function startGame (){
+  strBtn = true
+  console.log(startButton)
 }
