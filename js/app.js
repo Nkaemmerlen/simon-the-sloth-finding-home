@@ -104,10 +104,12 @@ function storyLine (click){
   }
   if (clicked === allDecisions[9]){
     prompt.textContent = allEndings[0]
+    rstBtn.removeAttribute("hidden")
     // show replay button and zoo screen/sound
   }
   if (clicked === allDecisions[10]){
     prompt.textContent = allEndings[1]
+    rstBtn.removeAttribute("hidden")
     //show replay button and death screen
   }
   if (clicked === allDecisions[11]){
@@ -125,7 +127,7 @@ function storyLine (click){
   }
   if (clicked === allDecisions[13]){
     prompt.textContent = allEndings[5]
-    // show replay
+    rstBtn.removeAttribute("hidden")
     // death screen
     // grunt death sound
   }
@@ -145,7 +147,7 @@ function storyLine (click){
   }
   if (clicked === allDecisions[16]){
     prompt.textContent = allEndings[2]
-    //show replay
+    rstBtn.removeAttribute("hidden")
     //confetti
     //display you won screen
   }
@@ -158,13 +160,13 @@ function storyLine (click){
   }
   if (clicked === allDecisions[18]){
     prompt.textContent = allEndings[2]
-    //show replay
+    rstBtn.removeAttribute("hidden")
     //confetti
     //display you won screen
   }
   if (clicked === allDecisions[19]){
     prompt.textContent = allEndings[3]
-    //show replay
+    rstBtn.removeAttribute("hidden")
     //confetti
     //display you won screen
     //display house in forest
@@ -199,7 +201,7 @@ function storyLine (click){
   }
   if (clicked === allDecisions[24]){
     prompt.textContent = allEndings[4]
-    // replay
+    rstBtn.removeAttribute("hidden")
     //death screen
     //jaguar noise
     dec1.textContent = ''
