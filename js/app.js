@@ -1,7 +1,10 @@
 /*--------------------------Constants-------------------------------*/
 import { allDecisions, allSituations, allEndings } from "../data/paths.js"
-
-
+const carCrash = new Audio('./sound/carCrash.wav')
+const forest = new Audio('./sound/forest.mp3')
+const ground = new Audio('./sound/ground.mp3')
+const jaguar = new Audio('./sound/jaguar.mp3')
+const hunger = new Audio('./sound/stomach.wav')
 /*---------------------------Variables------------------------------*/
 
 
@@ -39,6 +42,8 @@ function init (){
 }
 
 function storyLine (click){
+  forest.volume = .75
+  forest.play()
   let clicked = click.target.textContent
   console.log(clicked)
   if (clicked === allDecisions[0]){
