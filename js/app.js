@@ -199,12 +199,12 @@ function storyLine (click){
     dec3.textContent = ''
     dec4.textContent = ''
   }
-  if (clicked === allDecisions[25]){
-    prompt.textContent = 
-    dec1.textContent =
-    dec2.textContent =
-    dec3.textContent =
-    dec4.textContent =
-  }
+  // if (clicked === allDecisions[25]){
+  //   prompt.textContent = 
+  //   dec1.textContent =
+  //   dec2.textContent =
+  //   dec3.textContent =
+  //   dec4.textContent =
+  // }
   
 }
