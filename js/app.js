@@ -20,6 +20,7 @@ const dec4 = document.getElementById("fourthD")
 const title = document.getElementById("title")
 const decRow = document.getElementById("decision-row")
 const promptRow = document.getElementById("prompt-row")
+const sloth = document.getElementById("sloth")
 
 
 
@@ -52,6 +53,7 @@ function storyLine (click){
   showDec ()
   decRow.removeAttribute("hidden")
   promptRow.removeAttribute("hidden")
+  sloth.setAttribute("hidden",1)
   forest.volume = .75
   forest.play()
   strBtn.setAttribute("hidden", 1)
