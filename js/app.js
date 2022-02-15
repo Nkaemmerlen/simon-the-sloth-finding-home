@@ -17,6 +17,9 @@ const dec1 = document.getElementById("firstD")
 const dec2 = document.getElementById("secondD")
 const dec3 = document.getElementById("thirdD")
 const dec4 = document.getElementById("fourthD")
+const title = document.getElementById("title")
+const decRow = document.getElementById("decision-row")
+const promptRow = document.getElementById("prompt-row")
 
 
 
@@ -33,20 +36,34 @@ rstBtn.addEventListener('click', init)
 init ()
 
 function init (){
-  dec1.textContent = allDecisions[0]
-  dec2.textContent = allDecisions[1]
-  dec3.textContent = allDecisions[2]
-  dec4.textContent = ''
-  prompt.textContent = allSituations[0]
+  // dec1.textContent = allDecisions[0]
+  // dec2.textContent = allDecisions[1]
+  // dec3.textContent = allDecisions[2]
+  // dec4.textContent = ''
+  // prompt.textContent = allSituations[0]
+  decRow.setAttribute("hidden", 1)
   rstBtn.setAttribute("hidden", 1)
+  promptRow.setAttribute("hidden", 1)
   forest.pause()
+  strBtn.removeAttribute("hidden")
 }
 
 function storyLine (click){
+  showDec ()
+  decRow.removeAttribute("hidden")
+  promptRow.removeAttribute("hidden")
   forest.volume = .75
   forest.play()
+  strBtn.setAttribute("hidden", 1)
   let clicked = click.target.textContent
   console.log(clicked)
+  if (clicked === 'Start'){
+    dec1.textContent = allDecisions[0]
+    dec2.textContent = allDecisions[1]
+    dec3.textContent = allDecisions[2]
+    dec4.textContent = ''
+    prompt.textContent = allSituations[0]
+  }
   if (clicked === allDecisions[0]){
     prompt.textContent = allSituations[1]
     dec1.textContent = allDecisions[3]
@@ -121,11 +138,7 @@ function storyLine (click){
   }
   if (clicked === allDecisions[10]){
     prompt.textContent = allEndings[1]
-    rstBtn.removeAttribute("hidden")
-    dec1.textContent = ''
-    dec2.textContent = ''
-    dec3.textContent = ''
-    dec4.textContent = ''
+    isLoser ()
     carCrash.volume = .1
     carCrash.play()
     //show replay button and death screen
@@ -145,11 +158,7 @@ function storyLine (click){
   }
   if (clicked === allDecisions[13]){
     prompt.textContent = allEndings[5]
-    rstBtn.removeAttribute("hidden")
-    dec1.textContent = ''
-    dec2.textContent = ''
-    dec3.textContent = ''
-    dec4.textContent = ''
+    isLoser ()
     // death screen
     // grunt death sound
     hunger.volume = .2
@@ -172,11 +181,7 @@ function storyLine (click){
   }
   if (clicked === allDecisions[16]){
     prompt.textContent = allEndings[2]
-    rstBtn.removeAttribute("hidden")
-    dec1.textContent = ''
-    dec2.textContent = ''
-    dec3.textContent = ''
-    dec4.textContent = ''
+    isWinner ()
     //confetti
     //display you won screen
   }
@@ -189,21 +194,13 @@ function storyLine (click){
   }
   if (clicked === allDecisions[18]){
     prompt.textContent = allEndings[2]
-    rstBtn.removeAttribute("hidden")
-    dec1.textContent = ''
-    dec2.textContent = ''
-    dec3.textContent = ''
-    dec4.textContent = ''
+    isWinner ()
     //confetti
     //display you won screen
   }
   if (clicked === allDecisions[19]){
     prompt.textContent = allEndings[3]
-    rstBtn.removeAttribute("hidden")
-    dec1.textContent = ''
-    dec2.textContent = ''
-    dec3.textContent = ''
-    dec4.textContent = ''
+    isWinner ()
     //confetti
     //display you won screen
     //display house in forest
@@ -238,23 +235,34 @@ function storyLine (click){
   }
   if (clicked === allDecisions[24]){
     prompt.textContent = allEndings[4]
-    rstBtn.removeAttribute("hidden")
+    isLoser ()
     //death screen
-    //jaguar noise
     jaguar.volume = .1
     jaguar.play()
-    dec1.textContent = ''
-    dec2.textContent = ''
-    dec3.textContent = ''
-    dec4.textContent = ''
   }
-  // if (clicked === allDecisions[25]){
-  //   prompt.textContent = 
-  //   dec1.textContent =
-  //   dec2.textContent =
-  //   dec3.textContent =
-  //   dec4.textContent =
-  // }
-  
 }
-
+function isWinner () {
+  rstBtn.removeAttribute("hidden")
+  dec1.setAttribute("hidden", 1)
+  dec2.setAttribute("hidden", 1)
+  dec3.setAttribute("hidden", 1)
+  dec4.setAttribute("hidden", 1)
+  title.textContent = "You win!"
+  decRow.setAttribute("hidden",1)
+  // display winner screen with ending
+}
+function isLoser () {
+  rstBtn.removeAttribute("hidden")
+  dec1.setAttribute("hidden", 1)
+  dec2.setAttribute("hidden", 1)
+  dec3.setAttribute("hidden", 1)
+  dec4.setAttribute("hidden", 1)
+  title.textContent = "You lose!"
+  // display losing screen with ending
+}
+function showDec () {
+  dec1.removeAttribute("hidden")
+  dec2.removeAttribute("hidden")
+  dec3.removeAttribute("hidden")
+  dec4.removeAttribute("hidden")
+}
