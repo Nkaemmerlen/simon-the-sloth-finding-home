@@ -5,6 +5,7 @@ const forest = new Audio('./sound/forest.mp3')
 const ground = new Audio('./sound/ground.mp3')
 const jaguar = new Audio('./sound/jaguar.mp3')
 const hunger = new Audio('./sound/stomach.wav')
+const click = new Audio('./sound/click.wav')
 /*---------------------------Variables------------------------------*/
 
 
@@ -25,6 +26,22 @@ const sloth = document.getElementById("sloth-img")
 
 
 /*------------------------ Event Listeners -------------------------*/
+dec1.addEventListener('mouseover', function (){
+  click.volume = 1
+  click.play()
+})
+dec2.addEventListener('mouseover', function (){
+  click.volume = 1
+  click.play()
+})
+dec3.addEventListener('mouseover', function (){
+  click.volume = 1
+  click.play()
+})
+dec4.addEventListener('mouseover', function (){
+  click.volume = 1
+  click.play()
+})
 dec1.addEventListener('click', storyLine)
 dec2.addEventListener('click', storyLine)
 dec3.addEventListener('click', storyLine)
@@ -275,3 +292,8 @@ function showDec () {
   dec3.removeAttribute("hidden")
   dec4.removeAttribute("hidden")
 }
+
+
+dec1.onmouseenter(function(){
+  ground.play()
+})
