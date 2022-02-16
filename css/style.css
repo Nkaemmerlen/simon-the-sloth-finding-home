@@ -71,5 +71,7 @@ body {
   margin-top: 50px;
 }
 #sloth {
-  align-content: center;
+  width: 100%;
+  margin: auto;
+  max-width: 500px ;
 }
