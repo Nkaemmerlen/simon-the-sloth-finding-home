@@ -20,7 +20,7 @@ const dec4 = document.getElementById("fourthD")
 const title = document.getElementById("title")
 const decRow = document.getElementById("decision-row")
 const promptRow = document.getElementById("prompt-row")
-const sloth = document.getElementById("sloth")
+const sloth = document.getElementById("sloth-img")
 
 
 
@@ -31,6 +31,11 @@ dec3.addEventListener('click', storyLine)
 dec4.addEventListener('click', storyLine)
 strBtn.addEventListener('click', storyLine)
 rstBtn.addEventListener('click', init)
+sloth.addEventListener('click', () => {
+  sloth.classList.remove("animate__animated", "animate__swing", "animate__slow", "animate__delay-1s")
+  void sloth.offsetWidth
+  sloth.classList.add("animate__animated", "animate__swing", "animate__slow", "animate__delay-1s")
+})
 
 
 /*--------------------------- Functions ----------------------------*/
