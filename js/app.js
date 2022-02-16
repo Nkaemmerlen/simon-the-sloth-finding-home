@@ -66,11 +66,11 @@ function storyLine (click){
     setTimeout(function(){
       ground.play()
     }, 3000)
+    prompt.textContent = allSituations[0]
     dec1.textContent = allDecisions[0]
     dec2.textContent = allDecisions[1]
     dec3.textContent = allDecisions[2]
     dec4.textContent = ''
-    prompt.textContent = allSituations[0]
   }
   if (clicked === allDecisions[0]){
     prompt.textContent = allSituations[1]
@@ -265,6 +265,7 @@ function isLoser () {
   dec2.setAttribute("hidden", 1)
   dec3.setAttribute("hidden", 1)
   dec4.setAttribute("hidden", 1)
+  decRow.setAttribute("hidden",1)
   title.textContent = "You lose!"
   // display losing screen with ending
 }
