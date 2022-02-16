@@ -37,16 +37,13 @@ rstBtn.addEventListener('click', init)
 init ()
 
 function init (){
-  // dec1.textContent = allDecisions[0]
-  // dec2.textContent = allDecisions[1]
-  // dec3.textContent = allDecisions[2]
-  // dec4.textContent = ''
-  // prompt.textContent = allSituations[0]
+  title.textContent = "Simon the sloth, finding home"
   decRow.setAttribute("hidden", 1)
   rstBtn.setAttribute("hidden", 1)
   promptRow.setAttribute("hidden", 1)
   forest.pause()
   strBtn.removeAttribute("hidden")
+  sloth.removeAttribute("hidden")
 }
 
 function storyLine (click){
