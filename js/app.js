@@ -58,10 +58,14 @@ function storyLine (click){
   sloth.setAttribute("hidden",1)
   forest.volume = .75
   forest.play()
+  ground.volume = .6
   strBtn.setAttribute("hidden", 1)
   let clicked = click.target.textContent
   console.log(clicked)
   if (clicked === 'Start'){
+    setTimeout(function(){
+      ground.play()
+    }, 3000)
     dec1.textContent = allDecisions[0]
     dec2.textContent = allDecisions[1]
     dec3.textContent = allDecisions[2]

@@ -31,7 +31,7 @@ const allDecisions = [
 
 
 const allSituations = [
-  "The decisions you make from this point will determine if you live or die. You wake up after a hard fall and feel disorientated, What will you do now?",
+  "The decisions you make from this point will determine if you live or die. You were wondering around the forest in search of food. Being the sloth that you are you accidentally fell asleep on a branch! Several hours later you jolt up from a nightmare and you lose your balance and fall off the branch! You wake up after a hard fall and feel disorientated, What will you do now?",
   "What direction should you start walking in to find food and water?",
   "Nothing looks familiar to you, but you know you didnt come from the north or south. Will you go east or west?",
   "After walking for a bit you start to smell the faint scent of fresh cut leaves but cant pinpoint the exact location. It is either to your north or to your south",
