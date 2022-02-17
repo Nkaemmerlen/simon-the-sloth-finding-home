@@ -151,10 +151,7 @@ function storyLine (click){
   if (clicked === allDecisions[9]){
     prompt.textContent = allEndings[0]
     rstBtn.removeAttribute("hidden")
-    dec1.textContent = ''
-    dec2.textContent = ''
-    dec3.textContent = ''
-    dec4.textContent = ''
+    isLoser ()
     // show replay button and zoo screen/sound
   }
   if (clicked === allDecisions[10]){
@@ -176,6 +173,7 @@ function storyLine (click){
     dec1.textContent = allDecisions[13]
     dec2.textContent = allDecisions[14]
     dec3.textContent = allDecisions[15]
+    dec4.textContent = ''
   }
   if (clicked === allDecisions[13]){
     prompt.textContent = allEndings[5]
