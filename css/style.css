@@ -83,4 +83,7 @@ body {
   #title {
     font-size: 20px;
   }
+  .decision {
+    font-size: 10px;
+  }
 }
