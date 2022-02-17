@@ -241,9 +241,9 @@ function storyLine (click){
   if (clicked === allDecisions[22]){
     prompt.textContent = allSituations[6]
     dec1.textContent = ''
-    dec2.textContent = allDecisions[23]
+    dec2.textContent = allDecisions[25]
     dec3.textContent = ''
-    dec4.textContent = allDecisions[24]
+    dec4.textContent = allDecisions[26]
   }
   if (clicked === allDecisions[23]){
     prompt.textContent = allSituations[6]
