@@ -26,20 +26,16 @@ const sloth = document.getElementById("sloth-img")
 
 
 /*------------------------ Event Listeners -------------------------*/
-dec1.addEventListener('mouseover', function (){
-  click.volume = 1
+dec1.addEventListener('mouseover', () => {
   click.play()
 })
-dec2.addEventListener('mouseover', function (){
-  click.volume = 1
+dec2.addEventListener('mouseover', () => {
   click.play()
 })
-dec3.addEventListener('mouseover', function (){
-  click.volume = 1
+dec3.addEventListener('mouseover', () => {
   click.play()
 })
-dec4.addEventListener('mouseover', function (){
-  click.volume = 1
+dec4.addEventListener('mouseover', () => {
   click.play()
 })
 dec1.addEventListener('click', storyLine)
@@ -75,14 +71,14 @@ function storyLine (click){
   sloth.setAttribute("hidden",1)
   forest.volume = .75
   forest.play()
-  ground.volume = .6
   strBtn.setAttribute("hidden", 1)
   let clicked = click.target.textContent
   console.log(clicked)
   if (clicked === 'Start'){
+    ground.volume = .6
     setTimeout(function(){
       ground.play()
-    }, 3000)
+    }, 2000)
     prompt.textContent = allSituations[0]
     dec1.textContent = allDecisions[0]
     dec2.textContent = allDecisions[1]
@@ -104,11 +100,11 @@ function storyLine (click){
     dec4.textContent = allDecisions[20]
   }
   if(clicked === allDecisions[2]){
-    prompt.textContent = allSituations[12]
+    prompt.textContent = allSituations[11]
     dec1.textContent = ''
-    dec2.textContent = allDecisions[22]
+    dec2.textContent = allDecisions[27]
     dec3.textContent = ''
-    dec4.textContent = allDecisions[23]
+    dec4.textContent = ''
   }
   if (clicked === allDecisions[3]){
     prompt.textContent = allSituations[3]
@@ -252,7 +248,7 @@ function storyLine (click){
     dec4.textContent = allDecisions[24]
   }
   if (clicked === allDecisions[23]){
-    prompt.textContent = allSituations[13][14][8]
+    prompt.textContent = allSituations[13]
     dec1.textContent = ''
     dec2.textContent = allDecisions[14]
     dec3.textContent = ''
@@ -264,6 +260,12 @@ function storyLine (click){
     //death screen
     jaguar.volume = .1
     jaguar.play()
+  }
+  if(clicked === allDecisions[27]){
+    prompt.textContent = allSituations[12]
+    dec1.textContent = allDecisions[23]
+    dec2.textContent = ''
+    dec3.textContent = ''
   }
 }
 function isWinner () {
@@ -292,8 +294,3 @@ function showDec () {
   dec3.removeAttribute("hidden")
   dec4.removeAttribute("hidden")
 }
-
-
-dec1.onmouseenter(function(){
-  ground.play()
-})
