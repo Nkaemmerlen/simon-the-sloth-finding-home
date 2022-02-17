@@ -246,13 +246,27 @@ function storyLine (click){
     dec4.textContent = allDecisions[24]
   }
   if (clicked === allDecisions[23]){
-    prompt.textContent = allSituations[13]
+    prompt.textContent = allSituations[6]
     dec1.textContent = ''
-    dec2.textContent = allDecisions[14]
+    dec2.textContent = allDecisions[25]
     dec3.textContent = ''
-    dec4.textContent = allDecisions[15]
+    dec4.textContent = allDecisions[26]
   }
   if (clicked === allDecisions[24]){
+    prompt.textContent = allEndings[4]
+    isLoser ()
+    //death screen
+    jaguar.volume = .1
+    jaguar.play()
+  }
+  if(clicked === allDecisions[25]){
+    prompt.textContent = allSituations[13]
+    dec1.textContent = allDecisions[29]
+    dec2.textContent = ''
+    dec3.textContent = allDecisions[30]
+    dec4.textContent = ''
+  }
+  if(clicked === allDecisions[26]){
     prompt.textContent = allEndings[4]
     isLoser ()
     //death screen
@@ -264,6 +278,23 @@ function storyLine (click){
     dec1.textContent = allDecisions[23]
     dec2.textContent = ''
     dec3.textContent = ''
+    dec4.textContent = ''
+  }
+  if(clicked === allDecisions[29]){
+    prompt.textContent = allEndings[5]
+    isLoser ()
+    // death screen
+    // grunt death sound
+    hunger.volume = .2
+    hunger.play()
+    //add grunt
+  }
+  if(clicked === allDecisions[30]){
+    prompt.textContent = allSituations[8]
+    dec1.textContent = allDecisions[13]
+    dec2.textContent = allDecisions[14]
+    dec3.textContent = allDecisions[15]
+    dec4.textContent = ''
   }
 }
 function isWinner () {

@@ -23,11 +23,13 @@ const allDecisions = [
   "Head west from your current location",
   "Hope for the best and head west",
   "Decide to start looking for food around you",
-  "Keep going and hope that ther is leftover at home",
+  "Keep going and hope that there is leftover at home",
   "Observe your surroundings to see if anything is fishy",
   "who cares im starving!",
   "Keep heading west!",
-  "Start looking for some food around you"
+  "Start looking for some food around you",
+  "Pull through and try to make it home",
+  "Head back towards the scent of another sloth"
 ]
 
 
