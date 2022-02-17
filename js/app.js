@@ -152,14 +152,12 @@ function storyLine (click){
     prompt.textContent = allEndings[0]
     rstBtn.removeAttribute("hidden")
     isLoser ()
-    // show replay button and zoo screen/sound
   }
   if (clicked === allDecisions[10]){
     prompt.textContent = allEndings[1]
     isLoser ()
     carCrash.volume = .1
     carCrash.play()
-    //show replay button and death screen
   }
   if (clicked === allDecisions[11]){
     prompt.textContent = allSituations[4]
@@ -178,11 +176,8 @@ function storyLine (click){
   if (clicked === allDecisions[13]){
     prompt.textContent = allEndings[5]
     isLoser ()
-    // death screen
-    // grunt death sound
     hunger.volume = .2
     hunger.play()
-    //add grunt
   }
   if (clicked === allDecisions[14]){
     prompt.textContent = allSituations[10]
@@ -201,8 +196,6 @@ function storyLine (click){
   if (clicked === allDecisions[16]){
     prompt.textContent = allEndings[2]
     isWinner ()
-    //confetti
-    //display you won screen
   }
   if (clicked === allDecisions[17]){
     prompt.textContent = allSituations[10]
@@ -214,15 +207,10 @@ function storyLine (click){
   if (clicked === allDecisions[18]){
     prompt.textContent = allEndings[2]
     isWinner ()
-    //confetti
-    //display you won screen
   }
   if (clicked === allDecisions[19]){
     prompt.textContent = allEndings[3]
     isWinner ()
-    //confetti
-    //display you won screen
-    //display house in forest
   }
   if (clicked === allDecisions[20]){
     prompt.textContent = allSituations[3]
@@ -255,7 +243,6 @@ function storyLine (click){
   if (clicked === allDecisions[24]){
     prompt.textContent = allEndings[4]
     isLoser ()
-    //death screen
     jaguar.volume = .1
     jaguar.play()
   }
@@ -269,7 +256,6 @@ function storyLine (click){
   if(clicked === allDecisions[26]){
     prompt.textContent = allEndings[4]
     isLoser ()
-    //death screen
     jaguar.volume = .1
     jaguar.play()
   }
@@ -283,11 +269,8 @@ function storyLine (click){
   if(clicked === allDecisions[29]){
     prompt.textContent = allEndings[5]
     isLoser ()
-    // death screen
-    // grunt death sound
     hunger.volume = .2
     hunger.play()
-    //add grunt
   }
   if(clicked === allDecisions[30]){
     prompt.textContent = allSituations[8]
@@ -305,7 +288,6 @@ function isWinner () {
   dec4.setAttribute("hidden", 1)
   title.textContent = "You win!"
   decRow.setAttribute("hidden",1)
-  // display winner screen with ending
 }
 function isLoser () {
   rstBtn.removeAttribute("hidden")
@@ -315,7 +297,6 @@ function isLoser () {
   dec4.setAttribute("hidden", 1)
   decRow.setAttribute("hidden",1)
   title.textContent = "You lose!"
-  // display losing screen with ending
 }
 function showDec () {
   dec1.removeAttribute("hidden")
